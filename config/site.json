@@ -4,19 +4,32 @@
     "name": "CCDT",
     "title": "CCDT Official",
     "bio": "NGO working with marginalised and vulnerable communities since 1990 · Child Rights · Child Protection · Healthcare · Nutrition · Adolescents · Youth · Sustainability",
-    "avatar": "assets/avatar.svg",
+    "avatar": "assets/logo.svg",
     "avatarAlt": "Committed Communities Development Trust"
   },
   "theme": {
-    "accent": "#1a5c45",
-    "accentSoft": "#2d7a5f",
-    "background": "#e8f0eb",
+    "accent": "#F7B916",
+    "accentSoft": "#E5A80F",
+    "background": "#412213",
     "surface": "#ffffff",
-    "text": "#14241c",
-    "muted": "#4a6356"
+    "text": "#412213",
+    "muted": "#E8D5C4",
+    "maroon": "#7A1C1C"
+  },
+  "share": {
+    "title": "CCDT Official Links",
+    "text": "Committed Communities Development Trust — official links"
   },
   "footer": "Committed Communities Development Trust · Est. 1990",
   "links": [
+    {
+      "id": "donate",
+      "label": "Donate",
+      "url": "https://pages.razorpay.com/pl_DX1WSr3hFcvNRw/view",
+      "icon": "heart",
+      "enabled": true,
+      "featured": true
+    },
     {
       "id": "instagram",
       "label": "CCDT Instagram",

@@ -1,4 +1,5 @@
 const ICONS = {
+  heart: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.1C.5 9.9 1.2 6.2 4.1 4.7c1.8-.95 4-.55 5.35 1.05L12 8.2l2.55-2.45C15.9 4.15 18.1 3.75 19.9 4.7c2.9 1.5 3.6 5.2 1.43 8.2C18.7 16.65 12 21 12 21z"/></svg>`,
   instagram: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm5.25-3.25a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/></svg>`,
   whatsapp: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83a9.7 9.7 0 0 0 1.4 5.05L2 22l5.3-1.5a10 10 0 0 0 4.74 1.2h.01c5.46 0 9.89-4.4 9.89-9.84A9.8 9.8 0 0 0 12.04 2zm0 17.9h-.01a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.15.89.9-3.07-.2-.31a8 8 0 0 1-1.25-4.27c0-4.43 3.64-8.03 8.13-8.03a8.05 8.05 0 0 1 8.12 8.04c0 4.43-3.64 8.06-8.11 8.06zm4.46-6.02c-.24-.12-1.43-.7-1.65-.78s-.38-.12-.54.12-.62.78-.76.94-.28.18-.52.06a6.6 6.6 0 0 1-1.94-1.2 7.3 7.3 0 0 1-1.35-1.68c-.14-.24 0-.37.11-.49.11-.11.24-.28.36-.42s.16-.24.24-.4.04-.3-.02-.42-.54-1.28-.74-1.76c-.2-.47-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3s-.84.82-.84 2 0 1.16.18 1.4.86 2.08 2.08 2.86c1.46.94 2.06.98 2.36 1.1s.72.1.98-.06.86-.95 1.09-1.28.44-.28.72-.18 1.4.65 1.64.77.4.18.46.28v.84c-.06.34-.36.52-.76.34z"/></svg>`,
   x: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.882 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
@@ -25,11 +26,12 @@ export function applyTheme(theme = {}) {
   if (theme.surface) root.style.setProperty("--surface", theme.surface);
   if (theme.text) root.style.setProperty("--text", theme.text);
   if (theme.muted) root.style.setProperty("--muted", theme.muted);
+  if (theme.maroon) root.style.setProperty("--maroon", theme.maroon);
 }
 
 export function createLinkElement(link) {
   const a = document.createElement("a");
-  a.className = "link";
+  a.className = link.featured ? "link link-featured" : "link";
   a.href = link.url;
   a.target = "_blank";
   a.rel = "noopener noreferrer";

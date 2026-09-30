@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="CCDT — official links for Committed Communities Development Trust" />
-    <meta name="theme-color" content="#1a5c45" />
+    <meta name="theme-color" content="#412213" />
     <title>CCDT Official</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,14 +13,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="assets/avatar.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   </head>
   <body>
     <div class="atmosphere" aria-hidden="true"></div>
 
+    <button type="button" class="share-btn" id="share-btn" aria-label="Share this page">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 18 7.91a3 3 0 1 0-3-3c0 .24.04.47.09.7L8.04 9.72A2.99 2.99 0 0 0 6 9a3 3 0 1 0 0 6c.76 0 1.44-.3 1.96-.77l7.12 4.16c-.05.21-.08.43-.08.65a3 3 0 1 0 3-3z"/>
+      </svg>
+      <span>Share</span>
+    </button>
+    <span class="share-toast" id="share-toast" role="status" aria-live="polite" hidden>Link copied</span>
+
     <main class="shell">
       <header class="profile" id="profile">
-        <img class="avatar" id="avatar" src="assets/avatar.svg" alt="" width="96" height="96" />
+        <img class="avatar" id="avatar" src="assets/logo.svg" alt="" width="112" height="112" />
         <h1 class="brand" id="brand">CCDT</h1>
         <p class="bio" id="bio"></p>
       </header>
