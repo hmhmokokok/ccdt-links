@@ -123,8 +123,9 @@ body {
   width: 112px;
   height: 112px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   background: #fff;
+  padding: 4px;
   box-shadow: 0 0 0 4px rgba(247, 185, 22, 0.45), var(--shadow);
   animation: rise 0.7s ease both;
 }

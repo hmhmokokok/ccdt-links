@@ -4,7 +4,7 @@
     "name": "CCDT",
     "title": "CCDT Official",
     "bio": "NGO working with marginalised and vulnerable communities since 1990 · Child Rights · Child Protection · Healthcare · Nutrition · Adolescents · Youth · Sustainability",
-    "avatar": "assets/logo.svg",
+    "avatar": "assets/logo-avatar.png",
     "avatarAlt": "Committed Communities Development Trust"
   },
   "theme": {
@@ -62,7 +62,7 @@
       "id": "website",
       "label": "CCDT Website",
       "url": "https://ccdtrust.org",
-      "icon": "globe",
+      "icon": "website",
       "enabled": true
     },
     {
