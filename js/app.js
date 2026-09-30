@@ -11,10 +11,26 @@ function showToast(message) {
   }, 2000);
 }
 
+async function copyLink(url) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(url);
+    return;
+  }
+  const input = document.createElement("input");
+  input.value = url;
+  input.setAttribute("readonly", "");
+  input.style.position = "fixed";
+  input.style.opacity = "0";
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand("copy");
+  input.remove();
+}
+
 async function sharePage(config) {
   const url = config.siteUrl || window.location.href;
   const title = config.share?.title || config.profile?.title || "CCDT";
-  const text = config.share?.text || config.profile?.bio || "";
+  const text = config.share?.text || "Check out CCDT's official links";
 
   try {
     if (navigator.share) {
@@ -26,10 +42,10 @@ async function sharePage(config) {
   }
 
   try {
-    await navigator.clipboard.writeText(url);
+    await copyLink(url);
     showToast("Link copied");
   } catch {
-    showToast("Copy failed");
+    showToast("Could not copy link");
   }
 }
 

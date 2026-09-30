@@ -51,48 +51,50 @@ body {
 
 .share-btn {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 20;
+  top: max(0.85rem, env(safe-area-inset-top));
+  right: max(0.85rem, env(safe-area-inset-right));
+  z-index: 50;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.55rem 0.85rem;
-  border: 1px solid rgba(247, 185, 22, 0.45);
+  gap: 0.45rem;
+  max-width: calc(100vw - 1.7rem);
+  padding: 0.65rem 0.95rem;
+  border: none;
   border-radius: 999px;
-  background: rgba(65, 34, 19, 0.72);
-  color: #fff8e8;
+  background: var(--accent);
+  color: var(--bg);
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 700;
+  line-height: 1.1;
   cursor: pointer;
-  backdrop-filter: blur(8px);
-  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 8px 22px rgba(20, 10, 4, 0.35);
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .share-btn svg {
-  width: 16px;
-  height: 16px;
-  fill: var(--accent);
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  fill: currentColor;
 }
 
 .share-btn:hover,
 .share-btn:focus-visible {
-  background: rgba(90, 48, 24, 0.92);
-  border-color: var(--accent);
+  background: #ffc93a;
   transform: translateY(-1px);
   outline: none;
 }
 
 .share-toast {
   position: fixed;
-  top: 4.1rem;
-  right: 1rem;
-  z-index: 21;
-  padding: 0.45rem 0.75rem;
+  top: calc(max(0.85rem, env(safe-area-inset-top)) + 3.1rem);
+  right: max(0.85rem, env(safe-area-inset-right));
+  z-index: 51;
+  padding: 0.5rem 0.8rem;
   border-radius: 8px;
-  background: var(--accent);
-  color: var(--bg);
+  background: #fff;
+  color: var(--maroon);
   font-size: 0.8rem;
   font-weight: 700;
   box-shadow: var(--shadow);
@@ -101,7 +103,7 @@ body {
 .shell {
   width: min(100% - 2rem, 420px);
   margin: 0 auto;
-  padding: clamp(2.75rem, 8vw, 4rem) 0 3rem;
+  padding: clamp(3.5rem, 9vw, 4.5rem) 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
