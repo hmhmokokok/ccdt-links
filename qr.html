@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="QR code for the CCDT links page" />
+    <meta name="theme-color" content="#1a5c45" />
+    <title>CCDT QR Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/avatar.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <main class="shell qr-shell">
+      <a class="back" href="/">← Back to links</a>
+      <h1 class="brand qr-title">Scan to visit</h1>
+      <p class="bio" id="qr-hint">Scan this code to open the CCDT links page.</p>
+
+      <div class="qr-card">
+        <img
+          id="qr-image"
+          class="qr-image"
+          src="assets/qr-code.png"
+          width="280"
+          height="280"
+          alt="QR code linking to the CCDT links page"
+        />
+        <p class="qr-url" id="qr-url"></p>
+        <div class="qr-actions">
+          <a class="btn" id="download-png" href="assets/qr-code.png" download="ccdt-links-qr.png">Download PNG</a>
+          <a class="btn btn-secondary" id="open-site" href="#" target="_blank" rel="noopener">Open site</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/qr-page.js" type="module"></script>
+  </body>
+</html>

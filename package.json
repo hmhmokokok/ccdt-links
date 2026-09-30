@@ -1,0 +1,14 @@
+{
+  "name": "ccdt-links",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple responsive link page for CCDT — editable via config/site.json",
+  "scripts": {
+    "dev": "npx --yes serve . -l 3000",
+    "start": "npx --yes serve . -l 3000",
+    "qr": "node scripts/generate-qr.mjs"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

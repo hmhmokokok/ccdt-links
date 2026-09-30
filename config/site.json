@@ -1,0 +1,70 @@
+{
+  "siteUrl": "https://ccdt-links.vercel.app",
+  "profile": {
+    "name": "CCDT",
+    "title": "CCDT Official",
+    "bio": "NGO working with marginalised and vulnerable communities since 1990 · Child Rights · Child Protection · Healthcare · Nutrition · Adolescents · Youth · Sustainability",
+    "avatar": "assets/avatar.svg",
+    "avatarAlt": "Committed Communities Development Trust"
+  },
+  "theme": {
+    "accent": "#1a5c45",
+    "accentSoft": "#2d7a5f",
+    "background": "#e8f0eb",
+    "surface": "#ffffff",
+    "text": "#14241c",
+    "muted": "#4a6356"
+  },
+  "footer": "Committed Communities Development Trust · Est. 1990",
+  "links": [
+    {
+      "id": "instagram",
+      "label": "CCDT Instagram",
+      "url": "https://www.instagram.com/ccdtrust",
+      "icon": "instagram",
+      "enabled": true
+    },
+    {
+      "id": "whatsapp",
+      "label": "CCDT WhatsApp",
+      "url": "https://wa.me/919029071146",
+      "icon": "whatsapp",
+      "enabled": true
+    },
+    {
+      "id": "x",
+      "label": "CCDT X",
+      "url": "https://x.com/ccdtrust",
+      "icon": "x",
+      "enabled": true
+    },
+    {
+      "id": "youtube",
+      "label": "CCDT YouTube",
+      "url": "https://www.youtube.com/user/ccdtrust",
+      "icon": "youtube",
+      "enabled": true
+    },
+    {
+      "id": "website",
+      "label": "CCDT Website",
+      "url": "https://ccdtrust.org",
+      "icon": "globe",
+      "enabled": true
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/ccdtrust",
+      "icon": "facebook",
+      "enabled": true
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/company/committed-communities-development-trust",
+      "icon": "linkedin",
+      "enabled": true
+    }
+  ]
+}
